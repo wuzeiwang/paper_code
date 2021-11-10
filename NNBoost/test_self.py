@@ -177,7 +177,7 @@ def main():
     regularization_learn_rate_result = []
 
     label = ["boston", "digits", "wine", "airfoil_self_noise", "Folds5x2_pp"]
-
+    # 使用不同的参数进行实验，考查不同参数变化对模型的影响，由于有多个数据集，所以控制好参数大小，不然运行时间可能会有些过长
     for i in range(len(X)):
         print(X[i].shape, y[i].shape)
         X_train, X_test, y_train, y_test = train_test_split(X[i], y[i])
