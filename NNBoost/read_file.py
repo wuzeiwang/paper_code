@@ -87,6 +87,6 @@ def read_file_Gas_sensor_array_under_dynamic_gas_mixtures():
 
 if __name__ == '__main__':
     # 实验用的是前两个数据集，在论文中为D4, D5
-    # read_file_airfoil_self_noise()
+    read_file_airfoil_self_noise()
     # read_file_Folds5x2_pp()
-    read_file_Gas_sensor_array_under_dynamic_gas_mixtures()
+    # read_file_Gas_sensor_array_under_dynamic_gas_mixtures()
