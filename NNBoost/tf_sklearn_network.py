@@ -17,6 +17,7 @@ from sklearn.metrics import r2_score  # R square
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 mse_final = 6.5e-4
 
+# 调用接口的神经网络进行实验，代码会更加简洁
 
 def transpose(matrix):
     return zip(*matrix)
