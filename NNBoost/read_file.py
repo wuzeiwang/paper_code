@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt  # 导入常用的基本库
 def read_file_airfoil_self_noise():
     # 数据导入
     # 导入数据，注意编码使用gbk，然后含有中文字符的地址要设定"engine=python"
+    # 要自己去UCI网站下载数据
     dt = pd.read_table("F:/Data/Regression/airfoil_self_noise/airfoil_self_noise.dat", encoding='gbk', engine='python',
                        sep="\s+", header=None)
     # display(dt.duplicated().any())
@@ -37,6 +38,7 @@ def read_file_airfoil_self_noise():
 def read_file_Folds5x2_pp():
     # Folds5x2_pp数据导入
     # 导入数据，注意编码使用gbk，然后含有中文字符的地址要设定"engine=python"
+    # 要自己去UCI网站下载数据
     dt = pd.read_excel("F:/Data/Regression/Combined_Cycle_Power_Plant/CCPP/Folds5x2_pp.xlsx")
 
     X = [[0 for i in range(len(dt.values))] for j in range(len(dt.values[0]) - 1)]
@@ -84,6 +86,7 @@ def read_file_Gas_sensor_array_under_dynamic_gas_mixtures():
 
 
 if __name__ == '__main__':
+    # 实验用的是前两个数据集，在论文中为D4, D5
     # read_file_airfoil_self_noise()
     # read_file_Folds5x2_pp()
     read_file_Gas_sensor_array_under_dynamic_gas_mixtures()
